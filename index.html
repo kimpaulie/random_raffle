@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+	<title>랜덤 추첨</title>
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/mdb.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+        .middle {
+            vertical-align: middle;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+
+        }
+        .flex-container > p {
+            text-align: center;
+        }
+	</style>
+</head>
+
+<body>
+    
+    <!-- Default input -->
+
+    <div class="container text-center" style="padding-top: 150px;">
+        <h1>랜덤 숫자 생성기</h1>
+
+        <div class="row">
+           <div class="col-4">
+               <div class="md-form md-outline form-lg">
+                   <input id="form-lg" class="form-control form-control-lg" value="1" type="number" min="-99999" max="99999">
+                   <label for="form-lg">가장 작은 숫자</label>            
+               </div>
+           </div>
+           <div class="col-4">
+               <div class="md-form md-outline form-lg">
+                   <input id="form-lg" class="form-control form-control-lg" value="100" type="number" min="-99999" max="99999">
+                   <label for="form-lg">가장 큰 숫자</label>            
+               </div>
+           </div>
+           <div class="col-4">
+               <div class="md-form md-outline form-lg">
+                   <input id="form-lg" class="form-control form-control-lg" value="1" type="number" min="1" max="99999">
+                   <label for="form-lg">추첨 숫자 개수</label>            
+               </div>
+           </div>
+            
+        </div>
+        <button type="button" class="btn btn-default btn-lg btn-block">추첨 하기</button>
+        
+        
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body></html>
