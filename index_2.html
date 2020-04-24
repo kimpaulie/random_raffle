@@ -1,0 +1,73 @@
+<head>
+    <style></style>
+    <style></style>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #grid {
+            border: 5px solid pink;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        #grid2 {
+            border: 0px solid pink;
+            display: grid;
+            grid-template-columns: 2fr 2fr 1fr;
+        }
+
+        input[type=number]{
+/*            text-align: center;*/
+            width: 100%;
+            border-radius: 3px;
+            padding-left: 3px;
+        }
+        div div div {
+            padding: 5px;
+        }
+
+        label{
+            font-size: 50%;
+        }
+        .resultbox{
+            border: 5px solid pink;
+            margin: 5px;
+        }
+        .pad{
+            padding: 5px;
+        }
+        button{
+            width: 100%;
+        }
+        .center{
+            text-align: center;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="pad">
+        <h1 class="center">Random Raffle</h1>
+        <div id="grid2">
+            <div>
+                <label for="num1">최소</label>
+                <input id="num1" type="number" value="1" min="-99999" max="99999">
+            </div>
+            <div>
+                <label for="num2">최대</label>
+                <input id="num2" type="number" value="100" min="-99999" max="99999">
+            </div>
+            <div>
+                <label for="num3">결과 수</label>
+                <input id="num3" type="number" value="1" min="1" max="99999">
+            </div>
+        </div>
+        <div class="center"><button type="button">추첨 하기</button></div>
+        <div class="resultbox"><br><br><br><br><br>
+        </div>
+    </div>
+
+
+</body>
